@@ -1,0 +1,17 @@
+<?php
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_ZendeskIntegration
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \M2Commerce\ZendeskIntegration\Helper\Data $helper */
+
+$helper = $this->helper(\M2Commerce\ZendeskIntegration\Helper\Data::class);
+?>
+<?php if ($helper->isZePopupEnabled()): ?>
+    <?= $helper->getZePopupSnippet() ?>
+<?php endif; ?>

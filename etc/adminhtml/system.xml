@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_ZendeskIntegration
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="commerce_enterprise" translate="label" sortOrder="200">
+            <label>Commerce Enterprise</label>
+        </tab>
+        <section id="zESettings" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Zendesk Integration</label>
+            <tab>commerce_enterprise</tab>
+            <resource>M2Commerce_ZendeskIntegration::zESettings</resource>
+            <group id="popup" translate="label" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Web Widget</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Web Widget</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="snippet" translate="label comment" type="textarea" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Embedded Snippet Code</label>
+                </field>
+                <field id="contactUsLink" translate="label comment" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Contact Us Link</label>
+                    <comment>Zendesk help center link for contact us page where customer with redirect</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,19 @@
+<?php
+/**
+ * @category    M2Commerce Enterprise
+ * @package     M2Commerce_ZendeskIntegration
+ * @copyright   Copyright (c) 2023 M2Commerce Enterprise
+ * @author      dawoodgondaldev@gmail.com
+ */
+
+/** @var \Magento\Contact\Block\ContactForm $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \M2Commerce\ZendeskIntegration\Helper\Data $helper */
+
+$helper = $this->helper(\M2Commerce\ZendeskIntegration\Helper\Data::class);
+?>
+<?php if ($helper->isZePopupEnabled()): ?>
+    <div class="zendesk-link" style="margin-bottom: 15px; font-size: 15px">
+        <?= __('You reach out to use on zendesk as well <a href="'. $helper->getZeContactUsLink() .'" target="_blank">here.</a>') ?>
+    </div>
+<?php endif; ?>
