@@ -9,6 +9,10 @@ The module helps in integration zendesk with your website.
 2. Integration with contact form 
 3. Compatible with 2.3.x and 2.4.x versions.
 
+## Configuration
+
+There are several configuration options for this extension, which can be found at **STORES > Configuration > Commerce Enterprise > Zendesk Integration**.
+
 
 ## Installation
 ### Magento® Marketplace

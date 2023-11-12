@@ -14,7 +14,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="M2Commerce_ZendeskIntegration::zESettings" title="CE - Zendesk Settings"/>
+                            <resource id="M2Commerce_ZendeskIntegration::zESettings" title="M2C - Zendesk Settings"/>
                         </resource>
                     </resource>
                 </resource>
